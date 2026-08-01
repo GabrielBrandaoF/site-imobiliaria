@@ -241,3 +241,43 @@
   @media (prefers-reduced-motion: reduce){
     .link-card{ transition:none; }
   }
+
+  /* ===========================
+     ANIMAÇÕES
+  =========================== */
+
+  .avatar-wrap{
+      transition: transform .25s ease;
+      transform-style: preserve-3d;
+  }
+
+  .link-card{
+      opacity:0;
+      transform:translateY(20px);
+      animation:fadeUp .6s ease forwards;
+  }
+
+  .link-card:nth-child(1){animation-delay:.15s;}
+  .link-card:nth-child(2){animation-delay:.25s;}
+  .link-card:nth-child(3){animation-delay:.35s;}
+  .link-card:nth-child(4){animation-delay:.45s;}
+
+  @keyframes fadeUp{
+      from{
+          opacity:0;
+          transform:translateY(20px);
+      }
+
+      to{
+          opacity:1;
+          transform:translateY(0);
+      }
+  }
+
+  .avatar{
+      transition:.3s;
+  }
+
+  .avatar:hover{
+      box-shadow:0 0 30px rgba(198,161,91,.35);
+  }
