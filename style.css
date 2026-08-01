@@ -11,10 +11,6 @@
 
   *{ box-sizing: border-box; }
 
-  html{
-    overflow-x: hidden;
-  }
-
   html, body{
     margin:0;
     padding:0;
@@ -23,6 +19,7 @@
     font-family: 'Work Sans', -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    max-width: 100%;
   }
 
   body{
@@ -41,6 +38,8 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+    position:relative;
+    z-index:2;
   }
 
   /* ---- Header ---- */
@@ -298,16 +297,5 @@
     height:100%;
     pointer-events:none;
     z-index:-1;
-}
-
-html, body{
-    overflow-x:hidden;
-    max-width: 100%;
-}
-
-main{
-    position:relative;
-    z-index:2;
-    max-width: 100%;
 }
  
