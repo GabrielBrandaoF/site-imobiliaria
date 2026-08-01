@@ -11,6 +11,10 @@
 
   *{ box-sizing: border-box; }
 
+  html{
+    overflow-x: hidden;
+  }
+
   html, body{
     margin:0;
     padding:0;
@@ -18,13 +22,13 @@
     color: var(--text);
     font-family: 'Work Sans', -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   body{
     min-height: 100dvh;
     display:flex;
     justify-content:center;
-    overflow: hidden;
     background:
       radial-gradient(circle at 50% -10%, rgba(198,161,91,0.14), transparent 55%),
       var(--bg);
