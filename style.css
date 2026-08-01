@@ -285,6 +285,7 @@
 
   .avatar:hover{
       box-shadow:0 0 30px rgba(198,161,91,.35);
+  }
 
 /* ===========================
    PARTICULAS
@@ -299,12 +300,14 @@
     z-index:-1;
 }
 
-body{
+html, body{
     overflow-x:hidden;
+    max-width: 100%;
 }
 
 main{
     position:relative;
     z-index:2;
+    max-width: 100%;
 }
-  }
+ 
